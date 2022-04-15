@@ -1,0 +1,95 @@
+.Card {
+  padding: 0;
+  margin: 2.5em;
+  box-shadow: 1.5em 1.5em 0.5em gray;
+  height: 20em;
+  width: 15em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "i i i i i"
+    "i i i i i"
+    "i i i i i"
+    "i i i i i"
+    "t t t t t"
+    "t t t t t";
+}
+
+.Image {
+  grid-area: i;
+}
+
+.NftImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+.TextContainer {
+  grid-area: t;
+  background-color: rgb(236, 233, 233);
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 5fr;
+  grid-template-areas:
+    "u u u"
+    "m m m"
+    "a1 a2 a3"
+    "s b f";
+}
+.UserName {
+  grid-area: u;
+  font-size: smaller;
+  align-self: end;
+  position: relative;
+  top: -3.4em;
+  color: white;
+}
+
+.UserMedia {
+  grid-area: m;
+  font-size: smaller;
+  position: relative;
+  top: -3.4em;
+  color: white;
+}
+
+.Text3 {
+  grid-area: a1;
+  font-size: smaller;
+  color: rgb(153, 118, 118);
+  align-self: end;
+}
+.Text4 {
+  grid-area: a2;
+  font-size: smaller;
+  color: rgb(153, 118, 118);
+  align-self: end;
+}
+.Text5 {
+  grid-area: a3;
+  font-size: smaller;
+  color: rgb(153, 118, 118);
+  align-self: end;
+}
+.Text6 {
+  grid: s;
+  font-size: smaller;
+  color: rgb(221, 180, 180);
+}
+
+.Text7 {
+  grid-area: b;
+  font-size: smaller;
+  color: rgb(221, 180, 180);
+}
+
+.Text8 {
+  grid-area: f;
+  font-size: smaller;
+  color: rgb(221, 180, 180);
+}
