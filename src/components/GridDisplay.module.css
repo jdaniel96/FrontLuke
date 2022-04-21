@@ -4,7 +4,6 @@
   margin-top: -300px;
   height: 18.75em;
   width: 31.25em;
-  box-shadow: 10px 5px 2.5em rgb(112, 108, 108);
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto-fit, 9.25em 9.25em);
   row-gap: 0.2em;
