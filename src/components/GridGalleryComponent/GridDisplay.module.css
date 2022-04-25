@@ -1,12 +1,13 @@
 .Gallery {
+  display: grid;
   margin-left: 800px;
   margin-top: -300px;
-  box-shadow: 1.5em 1.5em 0.5em gray;
-  display: grid;
-  height: 300px;
-  width: 500px;
+  height: 18.75em;
+  width: 31.25em;
   grid-template-columns: repeat(3, 1fr);
-  grid-row: 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto-fit, 9.25em 9.25em);
+  row-gap: 0.2em;
+  column-gap: 0.2em;
   grid-template-areas:
     "card1 card2 smallcard1"
     "card1 card2 smallcard2";
@@ -17,12 +18,14 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 .Card2 {
   grid-area: card2;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .SmallCard1 {
@@ -30,6 +33,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .SmallCard2 {
@@ -37,4 +41,5 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
