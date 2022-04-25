@@ -1,0 +1,41 @@
+.Footer {
+  height: 4em;
+  background-color: rgba(0, 0, 0, 0);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: " . . . . . d t . . . . .";
+}
+
+.Footer > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.twitter {
+  grid-area: t;
+  align-self: center;
+  justify-self: center;
+}
+
+.discord {
+  grid-area: d;
+  align-self: center;
+  justify-self: center;
+}
+
+.iconSize1 {
+  height: 2em;
+  width: 3em;
+  color: #00acee;
+}
+
+.iconSize2 {
+  height: 2em;
+  width: 3em;
+  color: #7289da;
+}
