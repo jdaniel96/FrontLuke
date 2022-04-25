@@ -22,11 +22,12 @@ const Carousel:any = function({nfts}:any){
     //TODO fix a bug that makes the timer render infinitely in a loop
     },[currentSlide, length])
      useEffect(() => { //this allows the carousel autoplay
-        const interval = setInterval(() => {
+
+         const carousel =setInterval(() => {
              moveRight();
          }, 5500);
          return ()=>{
-             clearInterval(interval)
+             clearInterval(carousel);
 
          }
 
