@@ -24,13 +24,15 @@ function App() {
                 <li></li>
                 <li></li>
                 <li></li>
+
+        {/* the Card, GridDisplay and Carousel have some margin, it will look bad is uncommented. You should place them wherever you want to! and fix the margins before */}
+
         < Navbar/>
         <Frantik/>
-        {/* <Card/> */}
+        {/* <Card/> */} 
         {/* <GridDisplay/> */}
         {/* <Carousel nfts={CarouselNfts}/> */}
-        <Buttons/>
-        
+        <Buttons/>        
         <Footer/>
         </ul>
       </div >
